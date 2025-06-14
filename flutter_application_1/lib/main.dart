@@ -11,9 +11,10 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'M. Fadhil Hamidi',
+            'Muhammad Fadhil Hamidi',
             style: TextStyle(color: Colors.white),
           ),
+          centerTitle: true,
           backgroundColor: Colors.blue,
         ),
         body: Center(
