@@ -5,9 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class agenda extends Model
+class Agenda extends Model
 {
     use HasFactory;
+
     protected $table = "tbl_agenda";
-    protected $guarded = ['id'];
+
+    // Jika ingin lebih aman dan eksplisit, gunakan fillable
+    protected $fillable = [
+        'judul',
+        'keterangan',
+        'penulis',
+    ];
 }
